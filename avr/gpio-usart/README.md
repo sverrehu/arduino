@@ -1,13 +1,18 @@
 # Programming Arduino's AVR Microcontroller in C
 
 A friend got this school assignment, and since I was out of hobby
-project I thought it would be fun to give it a go:
+projects I thought it would be fun to give it a go:
 
 > _Write A C program for an AVR microcontroller that uses UART (Universal
 > Asynchronous Receiver-Transmitter) to: (i) sen a message "Button
 > Pressed!" when a button connected to a digital pin is pressed and (ii)
 > receive a command ("ON" or "OFF") from the serial terminal to turn a
 > LED on or off._
+
+My Arduino Uno Rev 3 happens to have both an AVR and UART, and writing
+such a program using the friendly Arduino C libraries would be quite
+easy. The task, however, is to use generic AVR libraries which are
+much more low-level. Great fun!
 
 ## Setup
 
