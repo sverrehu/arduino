@@ -5,13 +5,13 @@
 /* Arduino Uno GPIO pin 7 is PD7, pin 8 is PB0 */
 /* as seen on https://docs.arduino.cc/resources/pinouts/A000066-full-pinout.pdf */
 #define LED_PIN PB0
-#define BUTTON_PIN PD7
 #define LED_DDR DDRB
-#define BUTTON_DDR DDRD
 #define LED_OUT PORTB  /* output: PORTx */
-#define BUTTON_IN PIND /* input: PINx */
-
 #define LED_MASK (1 << (LED_PIN))
+
+#define BUTTON_PIN PD7
+#define BUTTON_DDR DDRD
+#define BUTTON_IN PIND /* input: PINx */
 #define BUTTON_MASK (1 << (BUTTON_PIN))
 
 #define F_CPU 16000000L /* clock frequency */
