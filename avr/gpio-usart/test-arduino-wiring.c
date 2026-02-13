@@ -1,3 +1,6 @@
+/* simple test for Arduino IDE to check the wiring.
+ * LED will be lit when the butten is pressed, unlit otherwise. */
+
 #define LED_PIN 8
 #define BUTTON_PIN 7
 
