@@ -9,10 +9,10 @@ projects, I thought it would be fun to give it a go:
 > receive a command ("ON" or "OFF") from the serial terminal to turn an
 > LED on or off._
 
-My Arduino Uno Rev 3 happens to have both an AVR and UART, and writing
-such a program using the friendly Arduino C libraries would be quite
-easy. The task, however, is to use generic AVR libraries which are
-much more low-level. Great fun!
+My Arduino Uno Rev 3 happens to have both an AVR and a UART, and
+writing such a program using the friendly Arduino C libraries would be
+quite easy. The task, however, is to use generic AVR libraries which
+are much more low-level. Great fun!
 
 ## Setup
 
