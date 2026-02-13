@@ -39,6 +39,8 @@ wrong. I'm a programmer; I don't know anything about electronics. :-)
 
 ![Arduino Setup](./img/arduino.jpg)
 
+(I found mostly green wires in my kit, hence the unconventional coloring.)
+
 ## Relevant Documentation
 
 * [AVR Atmega328P UART](http://www.rjhcoding.com/avrc-uart.php)
