@@ -36,6 +36,8 @@ exercise. I tested the wiring using [a simple
 program](test-arduino-wiring.c) written in the higher-level C of
 Arduino IDE, and I'm glad I did, because my initial wiring was wrong.
 
+![Arduino Setup](./img/arduino.jpg)
+
 ## Relevant Documentation
 
 * [AVR Atmega328P UART](http://www.rjhcoding.com/avrc-uart.php)
@@ -69,6 +71,9 @@ There should be one new device file after plugging in the Arduino,
 this is the device file to use. The last time I ran it, the Arduino
 was `/dev/cu.usbmodem111401`.
 
+(An even simpler approach is to start Arduino IDE and press on the
+device drop-down to see how it is identified.)
+
 ### Editing the Build Script
 
 Edit `build.sh` and change the `DEVICE` variable to reflect what you
@@ -88,6 +93,14 @@ the device.
 
 ## Testing
 
+Although you may test using any program capable of sending and
+receiving over a serial interface, I found it easier to just use the
+built-in "Serial Monitor" of Arduino IDE. You enable it by pressing
+the magnifying glass in the upper right corner of the IDE.
+
 ![Screenshot from Arduino IDE's Serial Monitor
  pane](./img/testing.jpg)
 
+The Serial Monitor will print any text sent from the microcontroller,
+and also let you send lines of text. This is where you type "ON" or
+"OFF" to control the LED.
