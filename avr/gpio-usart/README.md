@@ -71,8 +71,8 @@ There should be one new device file after plugging in the Arduino,
 this is the device file to use. The last time I ran it, the Arduino
 was `/dev/cu.usbmodem111401`.
 
-(An even simpler approach is to start Arduino IDE and press on the
-device drop-down to see how it is identified.)
+(An even simpler approach is to start Arduino IDE and press the device
+drop-down to see how it is identified.)
 
 ### Editing the Build Script
 
@@ -84,8 +84,8 @@ GCC Compilers for AVR and AVRDUDE.
 
 ### Building
 
-Just type `./build.sh` to build the program and transfer it to the
-Arduino.
+Just type `./build.sh` to build the program ([program.c](program.c))
+and transfer it to the Arduino.
 
 If you get device-related errors during the transfer, make sure your
 Arduino IDE is not running. Only one process at a time gets access to
