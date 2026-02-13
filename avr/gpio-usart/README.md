@@ -34,7 +34,8 @@ OFF With
 Button](https://roboticsbackend.com/arduino-turn-led-on-and-off-with-button/)
 exercise. I tested the wiring using [a simple
 program](test-arduino-wiring.c) written in the higher-level C of
-Arduino IDE, and I'm glad I did, because my initial wiring was wrong.
+Arduino IDE, and I'm glad I did, because my initial wiring was
+wrong. I'm a programmer; I don't know anything about electronics. :-)
 
 ![Arduino Setup](./img/arduino.jpg)
 
