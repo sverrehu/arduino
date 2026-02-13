@@ -57,7 +57,8 @@ of the time sleeping.
 
 To implement interrupt handling, the schematics (Arduino setup) will
 have to be changed, as the pin I initially used for the button does
-not support interrupts. Always something to learn.
+not support interrupts. Always something to learn when you dig into
+the hairy details of the documentation.
 
 ## Building and Transferring the Program
 
