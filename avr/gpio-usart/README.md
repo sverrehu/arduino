@@ -86,4 +86,8 @@ If you get device-related errors during the transfer, make sure your
 Arduino IDE is not running. Only one process at a time gets access to
 the device.
 
+## Testing
+
+![Screenshot from Arduino IDE's Serial Monitor
+ pane](./img/testing.jpg)
 
