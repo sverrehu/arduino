@@ -44,8 +44,46 @@ Arduino IDE, and I'm glad I did, because my initial wiring was wrong.
 
 ## Implementation Notes
 
-This implementation uses a naive approach with an active waiting loop,
-continously polling for data from the USART and the button. This is
-not energy efficient. A real-life implementation would register
-interrupt handlers for the two input sources, and spend most of the
-time sleeping.
+[This implementation](program.c) uses a naive approach with an active
+waiting loop, continously polling for data from the USART and the
+button. This is not energy efficient. A real-life implementation would
+register interrupt handlers for the two input sources, and spend most
+of the time sleeping.
+
+## Building and Transfering the Program
+
+I did this using Terminal on my Mac. It will be quite similar for
+Linux. I you are on Windows, you are on your own.
+
+### Identifying the Device
+
+We need to figure out the device name of the Arduino. The simplest
+approach may be to:
+
+1. Unplug the Arduino
+1. `ls /dev/cu.*`
+1. Plug the Arduino in
+1. Again `ls /dev/cu.*`
+
+There should be one new device file after plugging the Arduino in,
+this is the device file to use. The last time I ran it, the Arduino
+was `/dev/cu.usbmodem111401`.
+
+### Editing the Build Script
+
+Edit `build.sh` and change the `DEVICE` variable to reflect what you
+found above.
+
+Also change the `PATH` variable to point to wherever you installed the
+GCC Compilers for AVR and AVRDUDE.
+
+### Building
+
+Just type `./build.sh` to build the program and transfer it to the
+Arduino.
+
+If you get device-related errors during the transfer, make sure your
+Arduino IDE is not running. Only one process at a time gets access to
+the device.
+
+
