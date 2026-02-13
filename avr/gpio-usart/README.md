@@ -3,10 +3,10 @@
 A friend got this school assignment, and since I was out of hobby
 projects I thought it would be fun to give it a go:
 
-> _Write A C program for an AVR microcontroller that uses UART (Universal
-> Asynchronous Receiver-Transmitter) to: (i) sen a message "Button
+> _Write a C program for an AVR microcontroller that uses UART (Universal
+> Asynchronous Receiver-Transmitter) to: (i) send a message "Button
 > Pressed!" when a button connected to a digital pin is pressed and (ii)
-> receive a command ("ON" or "OFF") from the serial terminal to turn a
+> receive a command ("ON" or "OFF") from the serial terminal to turn an
 > LED on or off._
 
 My Arduino Uno Rev 3 happens to have both an AVR and UART, and writing
