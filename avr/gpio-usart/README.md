@@ -16,29 +16,31 @@ much more low-level. Great fun!
 
 ## Setup
 
-Download and install:
+### Download and install
 
 * [GCC Compilers for
   AVR](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio/gcc-compilers)
   for compiling the program
 * [AVRDUDE](https://github.com/avrdudes/avrdude) for transfering the
   program to the AVR microcontroller
+* [Arduino IDE](https://www.arduino.cc/en/software/) (optional) for
+  simple access to duplex serial communication using the "Serial
+  Monitor" pane
 
-## Relevant Documentation
-
-* [AVR Atmega328P UART](http://www.rjhcoding.com/avrc-uart.php)
-* [A000066-full-pinout.pdf](https://docs.arduino.cc/resources/pinouts/A000066-full-pinout.pdf)
-* [AVR 8-Bit Microcontroller](https://ww1.microchip.com/downloads/en/DeviceDoc/en590320.pdf)
-
-## Arduino Setup
+### Arduino Setup
 
 The Arduino is set up as outlined in the [Arduino – Turn LED ON and
 OFF With
 Button](https://roboticsbackend.com/arduino-turn-led-on-and-off-with-button/)
 exercise. I tested the wiring using [a simple
 program](test-arduino-wiring.c) written in the higher-level C of
-[Arduino IDE](https://www.arduino.cc/en/software/), and I'm glad I
-did, because my initial wiring was wrong.
+Arduino IDE, and I'm glad I did, because my initial wiring was wrong.
+
+## Relevant Documentation
+
+* [AVR Atmega328P UART](http://www.rjhcoding.com/avrc-uart.php)
+* [A000066-full-pinout.pdf](https://docs.arduino.cc/resources/pinouts/A000066-full-pinout.pdf)
+* [AVR 8-Bit Microcontroller](https://ww1.microchip.com/downloads/en/DeviceDoc/en590320.pdf)
 
 ## Implementation Notes
 
