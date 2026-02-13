@@ -10,9 +10,11 @@ Download and install:
 * [AVRDUDE](https://github.com/avrdudes/avrdude) for transfering the
   program to the AVR microcontroller
 
-## Documentation
+## Relevant Documentation
 
 * [AVR Atmega328P UART](http://www.rjhcoding.com/avrc-uart.php)
+* [A000066-full-pinout.pdf](https://docs.arduino.cc/resources/pinouts/A000066-full-pinout.pdf)
+* [AVR 8-Bit Microcontroller](https://ww1.microchip.com/downloads/en/DeviceDoc/en590320.pdf)
 
 ## Arduino Setup
 
