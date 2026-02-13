@@ -72,7 +72,7 @@ approach may be to:
 
 There should be one new device file after plugging in the Arduino,
 this is the device file to use. The last time I ran it, the Arduino
-was `/dev/cu.usbmodem111401`.
+was `/dev/cu.usbmodem101`.
 
 (An even simpler approach is to start Arduino IDE and press the device
 drop-down to see how it is identified.)

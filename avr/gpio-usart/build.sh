@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PROG_BASENAME=program
-DEVICE=/dev/cu.usbmodem111401
+DEVICE=/dev/cu.usbmodem101
 MCU=atmega328p
 export PATH=$HOME/tmp/avr8-gnu-toolchain-darwin_universal/bin:$PATH
 
