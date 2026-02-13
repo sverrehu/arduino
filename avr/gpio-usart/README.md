@@ -1,7 +1,7 @@
 # Programming Arduino's AVR Microcontroller in C
 
 A friend got this school assignment, and since I was out of hobby
-projects I thought it would be fun to give it a go:
+projects, I thought it would be fun to give it a go:
 
 > _Write a C program for an AVR microcontroller that uses UART (Universal
 > Asynchronous Receiver-Transmitter) to: (i) send a message "Button
@@ -21,7 +21,7 @@ much more low-level. Great fun!
 * [GCC Compilers for
   AVR](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio/gcc-compilers)
   for compiling the program
-* [AVRDUDE](https://github.com/avrdudes/avrdude) for transfering the
+* [AVRDUDE](https://github.com/avrdudes/avrdude) for transferring the
   program to the AVR microcontroller
 * [Arduino IDE](https://www.arduino.cc/en/software/) (optional) for
   simple access to duplex serial communication using the "Serial
@@ -45,12 +45,12 @@ Arduino IDE, and I'm glad I did, because my initial wiring was wrong.
 ## Implementation Notes
 
 [This implementation](program.c) uses a naive approach with an active
-waiting loop, continously polling for data from the USART and the
+waiting loop, continuously polling for data from the USART and the
 button. This is not energy efficient. A real-life implementation would
 register interrupt handlers for the two input sources, and spend most
 of the time sleeping.
 
-## Building and Transfering the Program
+## Building and Transferring the Program
 
 I did this using Terminal on my Mac. It will be quite similar for
 Linux. I you are on Windows, you are on your own.
@@ -65,7 +65,7 @@ approach may be to:
 1. Plug the Arduino in
 1. Again `ls /dev/cu.*`
 
-There should be one new device file after plugging the Arduino in,
+There should be one new device file after plugging in the Arduino,
 this is the device file to use. The last time I ran it, the Arduino
 was `/dev/cu.usbmodem111401`.
 
