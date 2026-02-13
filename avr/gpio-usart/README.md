@@ -55,6 +55,10 @@ button. This is not energy efficient. A real-life implementation would
 register interrupt handlers for the two input sources and spend most
 of the time sleeping.
 
+To implement interrupt handling, the schematics (Arduino setup) will
+have to be changed, as the pin I initially used for the button does
+not support interrupts. Always something to learn.
+
 ## Building and Transferring the Program
 
 I did this using Terminal on my Mac. It will be quite similar for
