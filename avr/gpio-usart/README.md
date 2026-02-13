@@ -11,7 +11,7 @@ projects, I thought it would be fun to give it a go:
 
 My Arduino Uno Rev 3 happens to have both an AVR and a UART, and
 writing such a program using the friendly Arduino C libraries would be
-quite easy. The task, however, is to use generic AVR libraries which
+quite easy. The task, however, is to use generic AVR libraries, which
 are much more low-level. Great fun!
 
 ## Setup
@@ -49,13 +49,13 @@ Arduino IDE, and I'm glad I did, because my initial wiring was wrong.
 [This implementation](program.c) uses a naive approach with an active
 waiting loop, continuously polling for data from the USART and the
 button. This is not energy efficient. A real-life implementation would
-register interrupt handlers for the two input sources, and spend most
+register interrupt handlers for the two input sources and spend most
 of the time sleeping.
 
 ## Building and Transferring the Program
 
 I did this using Terminal on my Mac. It will be quite similar for
-Linux. I you are on Windows, you are on your own.
+Linux. If you are on Windows, you are on your own.
 
 ### Identifying the Device
 
@@ -101,6 +101,6 @@ the magnifying glass in the upper right corner of the IDE.
 ![Screenshot from Arduino IDE's Serial Monitor
  pane](./img/testing.jpg)
 
-The Serial Monitor will print any text sent from the microcontroller,
+The Serial Monitor will print any text sent from the microcontroller
 and also let you send lines of text. This is where you type "ON" or
 "OFF" to control the LED.
